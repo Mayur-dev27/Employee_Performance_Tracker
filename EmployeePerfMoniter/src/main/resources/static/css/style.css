@@ -1,0 +1,333 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Employee List */
+.employee-list {
+    list-style: none;
+    padding: 0;
+}
+
+.employee-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.employee-list li:hover {
+    transform: scale(1.05);
+}
+
+.employee-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn-view {
+    background-color: #2196F3;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.btn-view:hover {
+    background-color: #1976D2;
+}
+
+/* Employee Detail Page */
+.employee-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.employee-detail h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.employee-detail p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Back Button */
+.btn-back {
+    background-color: #FFC107;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-back:hover {
+    background-color: #FF9800;
+}
+
+/* Review List */
+.review-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    background-color: #e9f7f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+}
+
+.review-item strong {
+    color: #4CAF50;
+}
+
+.review-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Add Review Form */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+textarea, input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+
+/* Error Message */
+.error-message {
+    color: #D32F2F;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Success Message */
+.success-message {
+    color: #388E3C;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Add Employee Form */
+.add-employee-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee-form h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-employee-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.add-employee-form input[type="text"], 
+.add-employee-form input[type="email"],
+.add-employee-form input[type="number"], 
+.add-employee-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.add-employee-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.add-employee-form input:focus, 
+.add-employee-form textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.add-employee-form .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.add-employee-form .btn-submit:hover {
+    background-color: #45a049;
+}
+
+.add-employee-form .error-message {
+    color: #D32F2F;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.add-employee-form .success-message {
+    color: #388E3C;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Employee Cards */
+.employee-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.employee-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.employee-card:hover {
+    transform: scale(1.05);
+}
+
+.employee-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.btn{
+	border-radius: 10px;
+	margin: 5px;
+}
+.btn-view {
+    background-color: #2196F3;
+}
+
+.btn-view:hover {
+    background-color: #1976D2;
+}
+
+.btns-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.btn-delete{
+	background-color: red;
+}
+.btn-delete:hover{background-color: red;}
